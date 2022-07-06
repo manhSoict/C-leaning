@@ -13,14 +13,11 @@
      d[b][i]=0; 
     for (int i=0;i<8;i++)
      d[i][c]=0;
-    
-    d[b][c]=1;
+
     int m=b, n=c;
 
     for(int k=0;k<7;k++)
         {m++;n++;d[m][n]=0;} m=b, n=c;
-    for(int k=0;k<7;k++)
-        {m++;n--;d[m][n]=0;} m=b, n=c;
     for(int k=0;k<7;k++)
         {m--;n++;d[m][n]=0;} m=b, n=c;
     for(int k=0;k<7;k++)
